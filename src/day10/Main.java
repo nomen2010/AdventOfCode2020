@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Main
 {
-    static String inputFile = "/Users/abradley/IdeaProjects/Advent2020/src/day10/input.txt";
+    static String inputFile = "src/day10/input.txt";
     static List<Long> numbers = new ArrayList<>();
     static List<Integer> inputFileList = new ArrayList<>();
     static List<Integer> differenceList = new ArrayList<>();

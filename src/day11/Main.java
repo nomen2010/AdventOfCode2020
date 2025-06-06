@@ -8,8 +8,8 @@ import java.util.List;
 public class Main
 {
     static String inputFile = "src/day11/input.txt";
-    static char e = 'L'; // empty chair
-    static char o = '#'; // occupied chair
+    static char e = 'L'; // empty seat
+    static char o = '#'; // occupied seat
     static char f = '.'; // floor
     static int maxAdjacentOccupiedSeats = 3; // any more than this value and an occupied seat will be emptied
 
@@ -159,7 +159,6 @@ public class Main
             .filter(ch -> ch == c)
             .count();
     }
-
 
     /**
      * Imports the input file into a list.

@@ -34,11 +34,16 @@ public class Main
             differenceList.add(inputFileList.get(i + 1) - inputFileList.get(i));
         }
 
-        sop("number of 1's in differenceList: " + Collections.frequency(differenceList, 1) + " | number of 3's in differenceList: " + Collections.frequency(differenceList, 3));
-        sop("The number of 1-jolt differences multiplied by the number of 3-jolt differences: " + (Collections.frequency(differenceList, 1) * Collections.frequency(differenceList, 3)));
+        sopnl();
+        sop("The number of 1-jolt differences (" + Collections.frequency(differenceList, 1)
+                + ") multiplied by the number of 3-jolt differences (" + Collections.frequency(differenceList, 3)
+                + "): " + (Collections.frequency(differenceList, 1) * Collections.frequency(differenceList, 3)));
+        sopnl();
 
         // print stuff for debugging
-//        sop("inputFileList: " + inputFileList.size() + " | differenceList: " + differenceList.size() + "\n\n");
+//        sop("inputFileList: " + inputFileList.size() + " | differenceList: " + differenceList.size());
+//        sopnl();
+//
 //        for (int i = 0; i < inputFileList.size(); i++)
 //        {
 //            if (i < inputFileList.size()-1)
@@ -68,5 +73,10 @@ public class Main
     public static void sop(String string)
     {
         System.out.println(string);
+    }
+
+    public static void sopnl()
+    {
+        System.out.println();
     }
 }
